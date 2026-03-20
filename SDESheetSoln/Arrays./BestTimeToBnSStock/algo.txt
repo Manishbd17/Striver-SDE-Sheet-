@@ -1,0 +1,15 @@
+take prices[0]  as  as minimum , to find minimum in array. 
+
+iterate over array and find minimum -> if ( nums[i] < min ) min =nums[i]; 
+
+calculate maxProfit also on the fly . 
+
+for(int i= 1->n) {
+    minPrice =min(minPrice,prices[i]); 
+    maxPft = max(maxPft, prices[i]-minPrice); 
+}
+
+iterate from 1 -> n 
+
+TC : O(n)
+SC : O(1)

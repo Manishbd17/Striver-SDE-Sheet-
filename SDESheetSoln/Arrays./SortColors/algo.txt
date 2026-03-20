@@ -1,0 +1,9 @@
+take st=0,mid=0,end=n-1
+
+if nums[mid] = 0  -> swap nums[st] and nums[mid] , st++,mid++; 
+if nums[mid] = 1  -> mid me hi 1 chahiye , mid++; 
+if nums[mid] = 2  -> swap nums[end] and nums[mid] ,  end--; 
+
+
+TC : O(n) 
+SC : O(1) 

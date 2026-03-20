@@ -1,0 +1,11 @@
+1. iterate over array from second last position. 
+ if (nums[i] < nums[i+1]) , idx=i, 
+ if(idx=-1) reverse the array . 
+else 
+iterate from last, whenever nums[i] > nums[idx] 
+swap them and break, 
+reverse from idx + 1 till end.  
+
+
+Time complexity : O(n); 
+Space complexity : O(1); 

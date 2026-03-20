@@ -1,0 +1,21 @@
+1. 
+    Maintain two booleans fr and fc as false. 
+    Iterate over matrix, if (mat[i][j]==0),  
+    if(i==0) fr = true , if (j==0) fc = true; 
+    mat[i][0]=0, mat[0][j]=0; 
+    // first row and first col ko zero kar rhe h. 
+
+2. 
+    iterate apart from first row and first col , 
+    if (mat[i][0]=0 || mat[0][j]=0) mat[i][j]=0; 
+    
+
+3. 
+    fr = true -> whole row is zero 
+    fc = true -> whole col is zero 
+
+
+j -> constant --> column 
+i -> constant --> row .
+
+

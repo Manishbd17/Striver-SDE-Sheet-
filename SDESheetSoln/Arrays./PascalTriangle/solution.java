@@ -1,30 +1,20 @@
 class Solution {
-    public void setZeroes(int[][] matrix) {
-        boolean fr = false, fc = false; 
-        int r=matrix.length, c = matrix[0].length; 
-        for(int i=0;i<r;i++) {
-            for(int j=0;j<c;j++) {
-                if(matrix[i][j]==0) {
-                    if(i==0) fr = true; 
-                    if(j==0) fc = true; 
-                    matrix[i][0]=0;
-                    matrix[0][j]=0; 
-                }
-            }
+    public List<Integer> generateRows(int n) {
+        List<Integer> lst = new ArrayList<>(); 
+        lst.add(1); 
+        int temp=1; 
+        for(int i=1;i<n;i++) {
+            temp*=(n-j); 
+            temp/=j;
+            lst.add(temp); 
         }
-        for(int i=1;i<r;i++) {
-            for(int j=1;j<c;j++) {
-                if(matrix[i][0]==0 || matrix[0][j]==0) 
-                    matrix[i][j]=0; 
-            }
-        }
-        if(fr) {
-            for(int j=0;j<c;j++) 
-                matrix[0][j]=0;
-        }
-        if(fc) {
-             for(int i=0;i<r;i++) 
-                matrix[i][0]=0; 
-        }
+        return temp; 
     }
-}
+    public List<List<Integer>> generate(int numRows) {
+        List<List<Integer>> res = new ArrayList<>(); 
+        for(int i=1;i<=numRows;i++){
+            res.add(generateRows(i)); 
+        }
+        return res;
+    }
+} 

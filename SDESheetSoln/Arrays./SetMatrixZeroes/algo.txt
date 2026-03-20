@@ -14,7 +14,7 @@
     fr = true -> whole row is zero 
     fc = true -> whole col is zero 
 
-
+Importan ** 
 j -> constant --> column 
 i -> constant --> row .
 

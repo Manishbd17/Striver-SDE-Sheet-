@@ -1,0 +1,13 @@
+take fast and slow pointers 
+
+and move them until they meet. now start slow from that position and fast from arr[0]
+
+wherever they meet, is the point where the duplicate number is
+
+
+
+TC : O(n)
+SC : O(1)
+
+if you take frequency array, O(n) extra space. 
+

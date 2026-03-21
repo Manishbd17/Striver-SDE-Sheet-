@@ -1,0 +1,8 @@
+travel through the matrix. 
+swap arr[i][j] with arr[j][i]
+
+then reverse all rows of the matrix
+
+O(n*m) 
+
+

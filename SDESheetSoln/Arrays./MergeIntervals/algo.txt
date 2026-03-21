@@ -1,0 +1,4 @@
+sort the list of intervals 
+iterate over it from 1st index and take 0th index as curr array. 
+if curr[1] < intervals[i][0] , then continue, make curr as intervals[i] 
+else curr[1] = max(curr[1],intervals[i][1]) 

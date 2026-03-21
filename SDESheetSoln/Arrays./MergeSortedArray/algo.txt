@@ -1,0 +1,7 @@
+take i as m-1, j as n-1 , k as m+n-1 
+
+start from last of both, 
+
+if (nums[i]>nums[j]) nums[k--]=nums[i--] 
+else nums[k--]=nums[j--] 
+
